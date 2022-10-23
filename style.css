@@ -5,6 +5,7 @@
      margin: 0;
      padding: 0;
      font-family: 'Poppins', sans-serif;
+     box-sizing: border-box;
 }
 
 body {
@@ -71,4 +72,31 @@ input#inputSubmit, button#logout {
 
 input#inputSubmit:hover, button#logout:hover {
      background-color:gray;
+}
+
+@media(max-width: 667px) {
+     h2 {
+          font-size: 25pt;
+     }
+     
+     h2#welcomeTitle {
+          font-size: 20pt;
+     }
+
+     div#form, div#welcome {
+          width: 75vw;
+          height: 35vh;
+     }
+     
+     input#name {
+          height: 30px;
+          margin-top: 0.6rem;
+          margin-bottom: 0.6rem;
+     }
+     
+     input#inputSubmit, button#logout {
+          width: 30%;
+          height: 35px;
+          border-radius: 2px;
+     }
 }
